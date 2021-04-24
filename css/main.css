@@ -33,6 +33,7 @@ h2 {
     font-size: 30px;
     margin: 0;
     padding-left: 30px;
+    border-bottom: 2px solid black;
 }
 nav {
     padding-left: 50px;
