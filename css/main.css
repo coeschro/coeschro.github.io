@@ -1,0 +1,48 @@
+content {
+    display: block;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: lightgray;
+}
+body {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+header, nav, footer {
+    margin: 1.25remauto;
+   
+}
+header, footer {
+background-color: navy;
+text-align: center;
+color: white;
+border-radius: 15px;
+}
+.link {
+    color: white;
+}
+header {
+    padding: 1.5rem;
+    font-size: 25px;
+    margin-bottom: auto;
+    text-align: center;
+}
+h2 {
+    font-size: 30px;
+    margin: 0;
+    padding-left: 30px;
+}
+nav {
+    padding-left: 50px;
+}
+img {
+    float: right;
+    margin: 10px;
+    border: 1px solid black;
+    border-top-right-radius: 15px;
+}
+p {
+    margin: 0;
+}
