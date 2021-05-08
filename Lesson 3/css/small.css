@@ -1,0 +1,129 @@
+.content {
+    display: block;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: lightgrey;
+}
+body {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+header,
+nav,
+main,
+footer {
+	max-width: 767px;
+	margin: 0 auto;
+}
+header, footer {
+background-color: #6096ba;
+text-align: center;
+color: white;
+box-shadow: 0 2px 15px gray;
+}
+.link {
+    color: white;
+}
+header {
+    padding: .5rem;
+    font-size: 25px;
+    margin-bottom: auto;
+    text-align: center;
+    font-family: 'Girassol', cursive;
+}
+h2 {
+    font-size: 15px;
+    margin: 0;
+    padding-left: 30px;
+    border-bottom: 2px solid black;
+    font-family: 'Girassol', cursive;
+}
+.paragraph {
+    font-family: 'Cormorant Garamond', serif;
+}
+p {
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0;
+}
+.main {
+	background-color: #e7ecef;
+	text-align: center;
+	box-shadow: 0 2px 15px gray;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	/*overflow: hidden;*/
+}
+.main ul li a {
+	display: block;
+	color: #8b8c89;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+}
+.main a:hover {
+	background-color: #8b8c89;
+	color: white;
+}
+div {
+    padding: .5rem;
+    background-color: #8b8c89;
+    border: .1rem solid #e7ecef;
+    border-radius: .5rem;
+    box-shadow: 0 2px 15px gray;
+}
+h2, h3 {
+    font-family: 'Girassol', cursive;
+    background-color: #e7ecef;
+}
+.first {
+    display: block;
+    padding: 30px;
+}
+.second {
+    display: block;
+    padding: 30px;
+}
+.people {
+    display: block;
+}
+.people img {
+    display: block;
+    float: left;
+    max-width: 200px;
+    max-height: 350px;
+    padding-right: 30px;
+}
+.scenarios li {
+    list-style-type: none;
+}
+@media only screen and (min-width: 37.5em) {
+
+    nav ul { 
+        display: flex;
+        /*grid-template-columns: repeat(5, 1fr);*/
+        /*grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); */
+    }
+
+/* Inline-Block             */
+
+    nav li {display: inline-block;}
+
+
+/* Float                    */
+
+    nav li {float:left; margin-right:15px;}
+    main {clear:both;}
+
+
+/*******************************************************/
+
+nav a {
+font-size: 1rem;
+}
+}
