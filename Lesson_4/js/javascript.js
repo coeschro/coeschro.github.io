@@ -1,5 +1,5 @@
 function toggleMenu(){
-    document.getElementsByClassName("navigation")[0].classlist.toggle('responsive');
+    document.getElementsByClassName("navigation")[0].classList.toggle('responsive');
 }
 
 let date = new Date();
