@@ -1,0 +1,13 @@
+
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+
+.navigation li {
+  font-size: 1.2rem;
+  padding: 6px;
+}
+
+
+
+} /*end large */
