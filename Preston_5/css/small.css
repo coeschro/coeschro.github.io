@@ -1,0 +1,157 @@
+.content {
+    display: block;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 30px;
+}
+body {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+header,
+nav,
+main,
+footer {
+	max-width: 767px;
+	margin: 0 auto;
+}
+header, footer {
+    background-color: #6096ba;
+    text-align: center;
+    color: white;
+    box-shadow: 0 2px 15px gray;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100px;
+}
+.link {
+    color: white;
+}
+header {
+    padding: .5rem;
+    font-size: 25px;
+    margin-bottom: auto;
+    text-align: center;
+    font-family: 'Girassol', cursive;
+}
+.logo {
+    float: right;
+    max-width: 80px;
+    max-height: 100px;
+    margin-right: 20px;
+}
+nav {
+	margin: 0 auto;
+	max-width: 760px;
+	background-color: lightgrey;
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+	color:grey;
+}
+.navigation li.active a {
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+}
+.navigation a:hover {
+	color: white;
+	background-color: grey;
+}
+.hero-div {
+    position: relative;
+    width: 98%;
+    height: 250px;
+    margin: 20px;
+}
+.town {
+    width: 100%;
+    height: 200px;
+}
+
+.overlay {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    background: rgba(0,0,100,0.5);
+    border: 1px solid grey;
+    padding: .5rem;
+    box-shadow: 0 0 30px #777;
+    color: white;
+}
+.farmer {
+    display: block;
+    position: inline;
+    width: 300px;
+    height: 200px;
+    float: right;
+}
+.connect {
+    list-style: none;
+ }
+ .social {
+    width: 30px;
+    height: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(3em, 1fr));
+    margin: 6px;
+    text-align: right;
+ }
+ .social:hover {
+    transform: skewY(20deg);
+    width: 20px;
+    height: 20px;
+  }
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+	display: block;
+}
+h2 {
+    font-size: 20px;
+    margin: 0;
+    border-bottom: 2px solid black;
+    font-family: 'Girassol', cursive;
+    text-align: center;
+}
+.heading {
+    font-family: 'Girassol', cursive;
+}
+.paragraph {
+    font-family: 'Cormorant Garamond', serif;
+}
+p {
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0;
+}
+
+.contentbox {
+    padding: .5rem;
+    background-color: #8b8c89;
+    border: .1rem solid #e7ecef;
+    border-radius: .5rem;
+    box-shadow: 0 2px 15px gray;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
