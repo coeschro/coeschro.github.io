@@ -7,6 +7,6 @@ document.querySelector("#year").textContent = date.getFullYear();
 document.querySelector("#lastmodified").textContent = document.lastModified;
 
 console.log(date.getDay());
-if (date.getDay() != 5) {
+if (date.getDay() == 5) {
     document.getElementsByClassName("banner")[0].classList.toggle('notification');
 }
