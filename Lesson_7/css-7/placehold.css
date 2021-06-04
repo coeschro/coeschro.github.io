@@ -6,6 +6,7 @@ main {
 }
 picture img {
     padding-bottom: 50px;
+    margin: 0;
 }
 img[data-src] {
     filter: blur(0.2em);
