@@ -4,6 +4,9 @@ main {
     text-align: center;
     margin: 0 auto;
 }
+picture img {
+    padding-bottom: 50px;
+}
 img[data-src] {
     filter: blur(0.2em);
 }
