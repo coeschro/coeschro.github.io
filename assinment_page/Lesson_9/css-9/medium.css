@@ -1,0 +1,59 @@
+@media only screen and (min-width: 32.5em) {
+    Header{   
+       font-size: 25px;
+    }
+    h1 {
+       font-size: 50px;
+    }
+    .navigation {
+      display: flex;
+   }
+   .navigation li {
+      display: block; /* change state in small view */
+      flex: 1 1 auto;
+   }
+   .navigation a {
+      text-align: center;
+   }
+   .navigation li:first-child {
+      display: none;
+   }
+    h2 {
+       font-size: 30px;
+    }
+    header, footer {
+        border-radius: 15px;
+    }
+    header img {
+       float: right;
+       margin: 10px;
+       border: 1px solid black;
+       border-top-right-radius: 15px;
+   }
+   .town{
+      width: 500px;
+      height: 270px;
+      padding: 0;
+   }
+   .forecast {
+      margin-top: 60px;
+    }
+   .app img {
+      float: right;
+      max-width: 300px;
+   }
+   .map {
+      display: block;
+      float: left;
+      padding: 10px;
+      width: 250px;
+      height: 250px;
+   }
+   .connect {
+      list-style: none;
+   }
+   .social {
+      display:block;
+   }
+   }
+   
