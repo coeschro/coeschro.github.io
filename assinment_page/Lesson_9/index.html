@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Strom Watchers</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Girassol&display=swap" rel="stylesheet">    
+    <link href="css-9/small.css" rel="stylesheet">
+    <link href="css-9/medium.css" rel="stylesheet">
+    <link href="css-9/large.css" rel="stylesheet">
+    
+  </head>
+  <body class="content">
+      <div class="banner">
+          This Saturday, Preston Pancakes in the park! 9:00 a.m. At the city park pavilion.
+        </div>
+    <header>
+        <picture class="logo">
+            <source media="(max-width: 200px)" srcset="images/logoSMALL.jpg">
+            <source media="(max-width: 500px)" srcset="images/logoMEDIUM.jpg">
+            <source media="(max-width: 700px)" srcset="images/logoLARGE.jpg"> 
+            <img src="images/storm-logo.jpg" alt="Weather trapped in an upside down pyramid">  
+        </picture> 
+        <section>
+            <h1>Storm Watchers</h1>
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li> 
+                <a href="#" onclick="toggleMenu()">&#9776;</a>
+            </li>
+            <li class="active">
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="Lesson_6/index-6.html">Preston</a>
+            </li>
+            <li>
+                <a href="#">Soda Springs</a>
+            </li>
+            <li>
+                <a href="#">Fish Haven</a>
+            </li>
+            <li> 
+            <a href="#">Strom Center</a>
+        </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="hero">
+        <div class="hero-ph">
+            <picture class="town">
+                <source media="(max-width: 200px)" srcset="images/wilderness_Small.jpg">
+                <source media="(max-width: 500px)" srcset="images/wilderness_Medium.jpg">
+                <source media="(max-width: 700px)" srcset="images/idaho_wilderness.jpg">   
+                <img src="images/idaho_wilderness.jpg" alt="Idaho Wilderness image">
+            </picture>
+        </div>
+        <div class ="SC_towns"></div>
+    <section class="contentbox">
+        <div class="article">
+            <h2>Download Our App!</h2>
+            <figure class="app">  
+                <img src="images/mobile.jpg" alt="Mobile phone"
+                    srcset="images/mobileSMALL.jpg 200w,
+                            images/mobile.jpg 500w,
+                            images/mobile.jpg 1000w,">
+                <figcaption>Photo by Math from Pexels</figcaption>
+            </figure> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="box">
+            <picture class="map">
+                <img src="images/storm_center.jpg" alt="Map location of Preston Idaho.">
+            </picture>
+            <ul class="contact">
+                <h3>Contact Information:</h3>
+                <li class="info">📍 355 South Blvd<br> Preston, Idaho 83263</li>
+                <li class="info">&#9742; 1-888-888-8888 </li>
+                <li class="info">&#128231; stromwatchers@gmail.com</li>
+            </ul>
+            <ul class="connect">
+                <li> 
+                    <a href="https://facebook.com" target="_blank">
+                        <img class="social" src="images/facebook.png" alt="Facebook icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com" target="_blank"> 
+                        <img class="social" src="images/instagram.png" alt="Instagram icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com" target="_blank"> 
+                        <img class="social" src="images/linkedin.png" alt="Linkedin icon">
+                    </a>
+                </li>
+                <li> 
+                  <a href="https://www.twitter.com" target="_blank"> 
+                    <img class="social" src="images/twitter.png" alt="Twitter icon">
+                  </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    </main>
+    <footer>
+        &copy; <span id="year"></span> | Coe D. Schroeder | Idaho | <a href="https://www.byui.edu/online" class="link">BYUI Online Learning</a>
+        <p>
+            Last Updated: <span id="lastmodified"></span>
+        </p>
+    </footer>
+    <script src="js/json.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Girassol']
+        }
+      });
+    </script>
+  </body>
+
+</html>

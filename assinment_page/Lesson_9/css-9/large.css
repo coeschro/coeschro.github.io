@@ -1,0 +1,33 @@
+
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+    .content {
+      max-width: 2000px;
+      margin: 0;
+    }
+    header,
+    footer {
+      margin: 0 auto;
+    }
+  
+  .navigation li {
+    font-size: 1.2rem;
+    padding: 6px;
+  }
+  .forecast {
+    margin-top: 85px;
+  }
+  
+  .box,
+  .article {
+    height: 300px;
+  }
+  .app img {
+    display: block;
+    float: right;
+  }
+  .map {
+    width: 300px;
+    height: 275px;
+  }
+  } /*end large */
