@@ -3,6 +3,8 @@
     max-width: 2000px;
     margin: 0 auto;
     padding: 30px;
+    font-size: 18px;
+    line-height: 1.5;
 }
 .banner {
     display: none;
@@ -13,11 +15,6 @@
     font: bold;
     font-weight: bold;
 }
-body {
-    font-size: 18px;
-    line-height: 1.5;
-}
-
 nav,
 main {
 	max-width: 1000px;
@@ -167,18 +164,23 @@ nav {
  }
 .article,
 .box {
-   display: block;
+    display: block;
     padding: .5rem; 
     background-color: #8b8c89;
     border: .1rem solid #e7ecef;
     border-radius: .5rem;
     box-shadow: 0 2px 15px gray;
+    height: 300px;
 }
-.farmer img {
+.app img {
     display: block;
     float: right;
-    min-width: 170px;
+    max-width: 170px;
+    max-height: 200px;
     padding-left: 10px;
+}
+.app figcaption {
+    font-size: 8px;
 }
 .map {
     display: none;
@@ -237,7 +239,6 @@ nav {
 h2 {
     font-size: 20px;
     margin: 0;
-    border-bottom: 2px solid black;
     font-family: 'Girassol', cursive;
     text-align: center;
 }
@@ -265,3 +266,49 @@ p {
   clear: both;
 }
 
+h3 {
+    font-size: 8px;
+    border-bottom: .1rem solid black;
+    font-style: italic;
+}
+.SC_towns {
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 8px 8px;
+}
+.SC_towns section {
+    background-color: #6096ba;
+    margin: 10px 10px 10px 10px;
+    border: 1px solid #e7ecef;
+}
+.SC_towns p {
+    margin-bottom: 7px;
+}
+.SC_towns .title {
+    font-weight: bold;
+}
+.SC_towns section img {
+    width: 67%;
+    box-shadow: 7px 7px 15px 3px rgb(87, 87, 87);
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
+
+@media only screen and (min-width: 52em){
+    .SC_towns {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media only screen and (min-width: 32.5em) {
+    .SC_towns {
+        grid-template-columns: repeat(3, 1fr);
+    }    
+
+
+
+
+}
