@@ -1,6 +1,6 @@
 
 const apiURL ="https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=596e321d521be0b09a65c8161f4130e4";
-const apiforecastURL = `https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=596e321d521be0b09a65c8161f4130e4`
+
 
 
 fetch(apiURL)
@@ -22,30 +22,4 @@ fetch(apiURL)
 
 
 
-
-    });
-
-fetch(apiforecastURL)
-    .then((response) => response.json())
-    .then((jsObject) => {
-        console.log(jsObject)
-        let day = 0;
-
-        
-
-        const fiveDayForecast = jsObject.list.filter((forecaster) => forecast.dt_txt.includes('18:00:00'));
-        console.log(fiveDayForecast);
-
-        for (let x = 0; x < fiveDayForecast.length; x++) {
-            let forecast = fiveDayForecast[x];
-            let temp = "temp" + x;
-            let icon = "icon" + x;
-            let day = "day" + x;
-            let date = new Date(forecast.dt_txt);
-            let foreDay = days[date.getDay()];
-
-            const description = forecast.weather[0].description;
-            const src = "https://openweathermap.org/img/w/" + forecast.weather[0].icon + ".png";
-            document.getElementById("dayofweek1").textContent = day;
-            document.getElementById("forecast1").textContent = temp;
-        }});
+});

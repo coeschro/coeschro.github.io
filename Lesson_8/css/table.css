@@ -22,11 +22,11 @@ th {
     font-size: 30px;
     background-color: #7fb9c2;
 }
-.col_info {
+tr:nth-child(2) {
     background-color: #628ca6;
     color: white;
 }
-.col_info td {
+tr:nth-child(2) td {
     font-style: bold;
 }
 tfoot {
@@ -34,15 +34,27 @@ tfoot {
     text-align: center;
     background-color: #7fb9c2;
 }
-.one {
+tr:nth-child(3) {
     background-color: #e7f0ed;
 }
-.two {
+
+tr:nth-child(5) {
+    background-color: #e7f0ed;
+}
+
+tr:nth-child(7) {
+    background-color: #e7f0ed;
+}
+tr:nth-child(4) {
     background-color: #e7ffed;
 }
-.November {
+
+tr:nth-child(8) {
     background-color: #e7ffed;
 }
-.November td:nth-child(3) {
+tr:nth-child(6) {
+    background-color: #e7ffed;
+}
+tr:nth-child(6) td:nth-child(3) {
     background-color: #628ca6;
 }
