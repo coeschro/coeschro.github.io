@@ -56,22 +56,28 @@
     </nav>
     <main>
         <form class="form">
+            <section class = "personal">
+            <h2>Contact Info</h2>    
             <div class="name">
-            <label>Full Name</label>
+            <label>Full Name:</label>
             <input type="text" name="full_name" required>
             </div>
             <div class="email">
-            <label>Email</label>
+            <label>Email:</label>
             <input type="email" placeholder="ex: Preston@gmail.com" name="email">
             </div>
             <div class="phone">
-            <label>Phone Number</label>
+            <label>Phone Number:</label>
             <input type="tel" name="phone" required>
             </div>
             <div class="zip">
-            <label>Zip Code</label>
+            <label>Zip Code:</label>
             <input type="number" name="zip" required>
             </div>
+            </section>
+
+            <section>
+                <h2>Storm Report</h2>
             <div class="date">
             <label>Storm Date</label>
             <input type="date" name="date">
@@ -103,13 +109,16 @@
             </div>
             <div class="danger">
             <label>User In-danger Level</label>
+                <div class="selection">
                 <input type="radio" id="yes" name="yes" value="yes">
                 <label for="yes">Yes</label>
                 <input type="radio" id="maybe" name="maybe" value="maybe">
                 <label for="maybe">Maybe</label>
                 <input type="radio" id="no" name="no" value="no">
                 <label for="no">No</label>
+                </div>
             </div>
+            </section>
             <div class="info">
             <label>Additional Information or Comments</label>
             <textarea name="comment" rows="5" cols="30"></textarea>
@@ -126,7 +135,7 @@
             Last Updated: <span id="lastmodified"></span>
         </p>
     </footer>
-    <script src="js/javascript.js" defer></script>
+    <script src="stormcenter_js/javascript.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
       WebFont.load({
