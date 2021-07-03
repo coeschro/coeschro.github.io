@@ -1,0 +1,283 @@
+#content {
+    display: block;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.banner {
+    display: none;
+}
+.notification {
+    background-color: yellow;
+    text-align: center;
+    font: bold;
+    font-weight: bold;
+}
+body {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+nav,
+main {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+header, footer {
+    max-width: 1200px;
+    align-self: auto;
+    background-color: #6096ba;
+    text-align: center;
+    color: white;
+    box-shadow: 0 2px 15px gray;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100px;
+    padding: .5rem;
+    font-size: 25px;
+    margin-bottom: auto;
+    text-align: center;
+    font-family: 'Girassol', cursive;
+}
+.logo {
+    max-width: 80px;
+    max-height: 100px;
+    margin-right: 20px;
+}
+.logo img {
+    width: 100%;
+    margin: 10px;
+    border: 1px solid black;
+    border-top-right-radius: 15px;
+}
+h1 {
+    font-size: 30px;
+}
+main {
+    margin: 0 auto;
+}
+#hero {
+    margin: 0;
+    width: 98%;
+    height: 250px;
+    padding: 0;
+}
+.hero {
+    position: relative;
+
+}
+
+nav {
+	margin: 0 auto;
+	max-width: 760px;
+	background-color: lightgrey;
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+	color:grey;
+}
+.navigation li.active a {
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+}
+.navigation li.active a:hover {
+    background-color: grey;
+}
+.navigation a:hover {
+	color: white;
+	background-color: grey;
+}
+.town {
+    width: 100%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.town img {
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    background: rgba(0,0,100,0.5);
+    border: 1px solid grey;
+    padding: .5rem;
+    box-shadow: 0 0 30px #777;
+    color: white;
+}
+.forecast {
+    width: 350px;
+    height: 155px;
+    align-items: center;
+    text-align: center;
+    border: 1px solid grey;
+    box-shadow: 0 0 30px #777;
+    padding-right: 20px;
+    margin:auto;
+    margin-top: 0;
+    margin-bottom: 30px;
+    background-color: lightgrey;
+}
+.forecast h3 {
+    text-align: left;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding-left: 20px;
+    background-color: #6096ba;
+}
+.forecast li {
+    padding: 0 15px 0 15px;
+}
+.graph {
+    align-self: center;
+    list-style: none;
+    display: flex;
+    padding-left: 5px;
+    margin-top: 0;
+    
+}
+.weather {
+    border-right: 1px solid black;
+}
+.dayicon {
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    border-top: 1px solid black;
+ }
+.article,
+.box {
+    display: block;
+    padding: .5rem;
+    background-color: #8b8c89;
+    border: .1rem solid #e7ecef;
+    border-radius: .5rem;
+    box-shadow: 0 2px 15px gray;
+}
+.farmer img {
+    display: block;
+    float: right;
+    min-width: 170px;
+    padding-left: 10px;
+}
+.map {
+    display: none;
+}
+.map img {
+    width: 100%;
+    height: 100%;
+}
+.contact {
+    list-style: none;
+    text-align: center;
+}
+.info {
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+}
+.connect {
+    width: 200px;
+    align-self: center;
+    list-style: none;
+    display: flex;
+    margin: auto;
+ }
+ .connect li {
+    display: block; /* change state in small view */
+    flex: 0 center auto;
+ }
+ .connect a {
+    align-self: center;
+ }
+ .social {
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+ }
+
+ .social:hover {
+    transform: skewY(20deg);
+    width: 20px;
+    height: 20px;
+  }
+  footer {
+      margin-top: 20px;
+  }
+  .link {
+    color: white;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+	display: block;
+}
+h2 {
+    font-size: 20px;
+    margin: 0;
+    border-bottom: 2px solid black;
+    font-family: 'Girassol', cursive;
+    text-align: center;
+}
+.heading {
+    font-family: 'Girassol', cursive;
+}
+.paragraph {
+    font-family: 'Cormorant Garamond', serif;
+}
+p {
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0;
+}
+
+.contentbox {
+    padding: .5rem;
+    background-color: #8b8c89;
+    border: .1rem solid #e7ecef;
+    border-radius: .5rem;
+    box-shadow: 0 2px 15px gray;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+form {
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    border: .01em solid lightgrey;
+    box-shadow: 10px 10px 10px 0px #777;
+    margin: 0 auto;
+    border-spacing: 0;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+select, option, input, label, datalist, textarea {
+    padding: 0.2rem 1rem;
+    font-size: 1.2rem;
+    color: inherit;
+}
