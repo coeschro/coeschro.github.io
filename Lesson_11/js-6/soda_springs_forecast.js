@@ -1,4 +1,4 @@
-const apiforecastURL = `https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&appid=596e321d521be0b09a65c8161f4130e4`;
+const apiforecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&appid=596e321d521be0b09a65c8161f4130e4";
 
 fetch(apiforecastURL)
 .then((response) => response.json())
@@ -20,3 +20,26 @@ fetch(apiforecastURL)
         document.getElementById(`icon${x+1}`).setAttribute("alt", alt);
     }
 });
+
+let byuiURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+
+fetch(byuiURL)
+    .then(function (response) {
+        return response.json()
+    })
+    .then(function (jsObject) {
+
+        const city = jsObject.towns.filter((specificTown) => specificTown.name.includes("Fish Haven"));
+        const events = city[0].events;
+        const upcomings = document.createElement("section");
+        const div = document.createElement("div");
+
+        events.forEach(event => {
+            let upcomingEvent = document.createElement("p");
+            upcomingEvent.textContent = event;
+            div.appendChild(upcomingEvent);
+            upcomings.appendChild(div);
+        })
+
+        document.querySelector("div.events").appendChild(upcomings);
+    })

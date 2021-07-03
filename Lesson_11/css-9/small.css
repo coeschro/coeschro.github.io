@@ -296,7 +296,18 @@ h3 {
     margin-bottom: 7px;
     margin-top: 7px;
 }
-
+.events {
+    margin: 0 auto;
+    box-shadow: 10px 17px 17px lightgray;
+    text-align: center;
+    border: 12px solid #134355;  
+}
+.events hr {
+    background-color: #be2623;
+    height: 3px;
+    width: 85%;
+    margin: auto;
+}
 @media only screen and (min-width: 52em){
     .SC_towns {
         grid-template-columns: repeat(4, 1fr);
