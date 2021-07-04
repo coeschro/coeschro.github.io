@@ -56,6 +56,50 @@
     </nav>
     <main>
         <form class="form">
+            <section>
+                <h2>Storm Report</h2>
+            <div class="date">
+            <label>Storm Date:</label>
+            <input type="date" name="date">
+            </div>
+            <div class="type">
+            <label>Strom Type:</label>
+            <input list="storm_type" id="difStorm" name="difStorm">
+
+            <datalist id="storm_type">
+                <option value="Flash Flood"></option>
+                <option value="Hail"></option>
+                <option value="Hurricane"></option>
+                <option value="Thunderstorm"></option>
+                <option value="Tornado"></option>
+            </datalist>
+            </div>
+            <div class="severity">
+            <label>Storm Severity:</label>
+            <input type="range" id="severity" name="severity" min="1" max="10">
+            </div>
+            <div class="region">
+            <label id="region">Storm Region:</label>
+            <select id="region" name="region" size="4">
+                <option value="Select_Region">Select Region</option>
+                <option value="Preston">Preston</option>
+                <option value="Soda_Springs">Soda Springs</option>
+                <option value="Fish_haven">Fish Haven</option>
+            </select>
+            </div>
+            <div class="danger">
+            <label>User In-danger Level:</label>
+                <div class="selection">
+                <input type="radio" id="yes" name="yes" value="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="maybe" name="maybe" value="maybe">
+                <label for="maybe">Maybe</label>
+                <input type="radio" id="no" name="no" value="no">
+                <label for="no">No</label>
+                </div>
+            </div>
+            </section>
+
             <section class = "personal">
             <h2>Contact Info</h2>    
             <div class="name">
@@ -76,51 +120,9 @@
             </div>
             </section>
 
-            <section>
-                <h2>Storm Report</h2>
-            <div class="date">
-            <label>Storm Date</label>
-            <input type="date" name="date">
-            </div>
-            <div class="type">
-            <label>Strom Type</label>
-            <input list="storm_type" id="difStorm" name="difStorm">
-
-            <datalist id="storm_type">
-                <option value="Flash Flood"></option>
-                <option value="Hail"></option>
-                <option value="Hurricane"></option>
-                <option value="Thunderstorm"></option>
-                <option value="Tornado"></option>
-            </datalist>
-            </div>
-            <div class="severity">
-            <label>Storm Severity</label>
-            <input type="range" id="severity" name="severity" min="1" max="10">
-            </div>
-            <div class="region">
-            <label id="region">Storm Region</label>
-            <select id="region" name="region" size="4">
-                <option value="Select_Region">Select Region</option>
-                <option value="Preston">Preston</option>
-                <option value="Soda_Springs">Soda Springs</option>
-                <option value="Fish_haven">Fish Haven</option>
-            </select>
-            </div>
-            <div class="danger">
-            <label>User In-danger Level</label>
-                <div class="selection">
-                <input type="radio" id="yes" name="yes" value="yes">
-                <label for="yes">Yes</label>
-                <input type="radio" id="maybe" name="maybe" value="maybe">
-                <label for="maybe">Maybe</label>
-                <input type="radio" id="no" name="no" value="no">
-                <label for="no">No</label>
-                </div>
-            </div>
-            </section>
+            
             <div class="info">
-            <label>Additional Information or Comments</label>
+            <label>Additional Information or Comments:</label>
             <textarea name="comment" rows="5" cols="30"></textarea>
             </div>
             <div class="submit">
